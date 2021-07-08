@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite 1]">
+  <listeners>
+    <listener class-name="listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Manager Role(failed)" parallel="classes">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.droom.testcases.droom_test_001">
+        <methods>
+          <include name="checkResult"/>
+          <include name="registerUserOnDroomApp"/>
+          <include name="setUp"/>
+          <include name="openReport"/>
+          <include name="classInstitiate"/>
+        </methods>
+      </class> <!-- com.droom.testcases.droom_test_001 -->
+    </classes>
+  </test> <!-- Manager Role(failed) -->
+</suite> <!-- Failed suite [Suite 1] -->
